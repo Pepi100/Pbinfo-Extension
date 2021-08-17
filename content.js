@@ -1,1 +1,1 @@
-alert("sucka")
+alert("The extension is active on this website")
