@@ -12,7 +12,8 @@
         "48": "icons/icon48.png",
         "32":"icons/icon32.png",
         "64":"icons/icon64.png",
-       "128": "icons/icon128.png"},
+       "128": "icons/icon128.png"
+    },
 
 
     "content_scripts":[
@@ -20,6 +21,11 @@
             "matches":["https://www.pbinfo.ro/probleme/*"],
             "js":["content.js"],
             "exclude_matches":["https://www.pbinfo.ro/probleme/categorii/*"]
+        },
+        {
+            "matches":["https://www.pbinfo.ro/solutii/probleme/*"],
+            "js":["counter.js"]
+
         }
     ],
 
@@ -29,8 +35,6 @@
     },
 
 
-
     "permissions":["activeTab"]
-
 
 }
